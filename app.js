@@ -8,10 +8,7 @@ io.sockets.on('connect',function(client){
 });
 
 app.get("/", function(req,res){
-    res.json(200,{
-        action:'Server node js & express is ready'
-    });
-   res.end(); 
+    res.send("Servidor http listo en el puerto 5000 :)...");
 });
 http.listen(5000,function () {
     console.log('Servidor http listo en el puerto 5000 :)...');
